@@ -1,11 +1,11 @@
-package com.hillel.classwork.lesson_2;
+package com.hillel.classwork.lesson2;
 
 public class Main {
 
     // psvs
     public static void main(String[] args) {
 
-        int a;
+        int a ;
 
         int b = 4;
 

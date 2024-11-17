@@ -1,4 +1,4 @@
-package com.hillel.classwork.lesson_2;
+package com.hillel.classwork.lesson2;
 
 public class Variables {
     public static void main(String[] args){
