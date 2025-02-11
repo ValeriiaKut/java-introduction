@@ -2,7 +2,7 @@ package com.hillel.homework.lesson2;
 
 import java.util.Scanner;
 
-public class Main1 {
+public class Exercise1 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
