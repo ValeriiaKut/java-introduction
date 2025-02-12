@@ -6,9 +6,9 @@ public class Tracker {
         int steps = 10_000;
         float hours = 12;
 
-        float c = steps / hours; // кількість кроків на годину
-        float d = c / 1000; // кількість тисяч кроків на годину
+        float sh = steps / hours; // кількість кроків на годину
+        float result = sh / 1000; // кількість тисяч кроків на годину
 
-        System.out.println("Кількість тисяч кроків на годину: " + d);
+        System.out.println("Кількість тисяч кроків на годину: " + result);
     }
 }
