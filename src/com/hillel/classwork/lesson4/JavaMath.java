@@ -15,23 +15,22 @@ public class JavaMath {
         int sy1 = sm1 * monthsInTenYears;
         int sy2 = sm2 * monthsInTenYears;
         int sy3 = sm3 * monthsInTenYears;
-        System.out.println("Зп за 10 лет 1 : " + sy1);
-        System.out.println("Зп за 10 лет 2 : " + sy2);
-        System.out.println("Зп за 10 лет 3 : " + sy3);
-
+        System.out.println("Salary for 10 years 1 : " + sy1);
+        System.out.println("Salary for 10 years 2 : " + sy2);
+        System.out.println("Salary for 10 years 3 : " + sy3);
 
         float tax = 0.05f;
 
         double t1 = sy1 - (sy1 * tax);
         double t2 = sy2 - (sy2 * tax);
         double t3 = sy3 - (sy3 * tax);
-        System.out.println("Зп после налога 1 : " + t1);
-        System.out.println("Зп после налога 2 : " + t2);
-        System.out.println("Зп после налога 3 : " + t3);
-
+        System.out.println("Salary after tax 1 : " + t1);
+        System.out.println("Salary after tax 2 : " + t2);
+        System.out.println("Salary after tax 3 : " + t3);
 
         double sum = (t1 + t2 + t3) / 3;
-        System.out.println("Средняя зп за 10 лет  с учетем налога : " + sum);
+        System.out.println("Average salary for 10 years after tax : " + sum);
+
 
 
     }

@@ -9,6 +9,7 @@ public class Tracker {
         float sh = steps / hours; // кількість кроків на годину
         float result = sh / 1000; // кількість тисяч кроків на годину
 
-        System.out.println("Кількість тисяч кроків на годину: " + result);
+        System.out.println("Number of thousands of steps per hour: " + result);
+
     }
 }

@@ -7,13 +7,13 @@ public class Exercise1 {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введіть значення для a: ");
+        System.out.print("Enter a: ");
         int a = scanner.nextInt();
         
-        System.out.print("Введіть значення для b: ");
+        System.out.print("Enter b: ");
         int b = scanner.nextInt();
 
-        System.out.println("До зміни:");
+        System.out.println("Before change:");
         System.out.println("a = " + a);
         System.out.println("b = " + b);
 
@@ -21,7 +21,7 @@ public class Exercise1 {
         b = a - b; // 30 - 10 = 20
         a = a - b; // 30 - 20 = 10
 
-        System.out.println("Після зміни:");
+        System.out.println("After change:");
         System.out.println("a = " + a);
         System.out.println("b = " + b);
 

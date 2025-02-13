@@ -6,9 +6,10 @@ public class Exercise2 {
         double myLongitude = 17.0506103; // довгота
         byte myHeight = 125; // висота дому
 
-        System.out.println("Широтa: " +  myLatitude);
-        System.out.println("Довгота: " + myLongitude);
-        System.out.println("Висота дому: " + myHeight + " метрів.");
+        System.out.println("Latitude: " + myLatitude);
+        System.out.println("Longitude: " + myLongitude);
+        System.out.println("Height of the house: " + myHeight + " meters.");
+
 
     }
 }
