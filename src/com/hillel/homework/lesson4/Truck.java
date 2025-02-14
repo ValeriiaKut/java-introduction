@@ -16,19 +16,21 @@ public class Truck {
         System.out.println("Enter height of the track: ");
         int height = sc.nextInt();
 
-        System.out.println("Enter Kilograms for 1 meter^3: ");
-        int weight = sc.nextInt();
+        System.out.println("Enter Max maxWeight for 1 meter^3: ");
+        int maxWeight = sc.nextInt();
 
-        System.out.println("Volume is " + calculateVolume(length, width, height) + " m^3.");
-        System.out.println("Maximum weight is " + totalWeight(length,width,height,weight) + " kg.");
+        int volume = calculateVolume(length, width, height);
+
+        System.out.println("Volume is " + volume + " m^3.");
+        System.out.println("Maximum maxWeight is " + totalWeight(volume,maxWeight) + " kg.");
 
 
     }
-    public static int calculateVolume(int length, int with, int height) {
-        return length * with + height;
+    public static int calculateVolume(int length, int width, int height) {
+        return length * width * height;
     }
 
-    public static int totalWeight(int length, int with, int height, int weight) {
-        return length * with + height * weight;
+    public static int totalWeight(int volume, int maxWeight) {
+        return  volume * maxWeight;
     }
 }
