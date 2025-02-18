@@ -9,7 +9,7 @@ public class Exersice2 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("Enter length: ");
-        int length = Integer.parseInt(reader.readLine());
+        float length = Float.parseFloat(reader.readLine());
 
         System.out.println("Enter height: ");
         float height = Float.parseFloat(reader.readLine());
@@ -17,14 +17,38 @@ public class Exersice2 {
         System.out.println("Enter width: ");
         float width = Float.parseFloat(reader.readLine());
 
-        if (length <= 0 || height <= 0 || width <= 0) {
-            System.out.println("Invalid numbers.");
-        } else if (length <= 55 && height <= 40 && width <= 22) {
-            System.out.println("Your bag is perfect.");
-        } else {
-            System.out.println("Your bag is too big.");
-        }
+         size1(length, height, width);
+         size2(length, height, width);
+
 
 
     }
+    private static boolean size1(float length, float height, float width) {
+        if (length <= 0 || height <= 0 || width <= 0) {
+            System.out.println("Invalid numbers.");
+            return false;
+        } else if (length <= 40 && height <= 55 && width <= 20) {
+            System.out.println("Your bag is perfect for size 1.");
+            return true;
+        } else {
+            System.out.println("Your bag is too big for size 1.");
+            return false;
+        }
+    }
+
+    private static boolean size2(float length, float height, float width) {
+        if (length <= 0 || height <= 0 || width <= 0) {
+            System.out.println("Invalid numbers.");
+            return false;
+        } else if (length <= 53 && height <= 40 && width <= 22) {
+            System.out.println("Your bag is perfect for size 2.");
+            return true;
+        } else {
+            System.out.println("Your bag is too big for size 2.");
+            return false;
+        }
+    }
+
+
+
 }
