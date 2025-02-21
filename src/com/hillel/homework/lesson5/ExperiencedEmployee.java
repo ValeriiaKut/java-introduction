@@ -10,10 +10,13 @@ public class ExperiencedEmployee {
 
         int monthsInYear = 12;
         int experienceBonus = 100;
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.print("Enter your month salary : ");
         int monthSalary = Integer.parseInt(br.readLine());
+
+        int yearSalary =  monthSalary * monthsInYear;
 
         System.out.print("Enter your experience years : ");
         float experience = Float.parseFloat(br.readLine());
@@ -21,20 +24,17 @@ public class ExperiencedEmployee {
 
         if (experience > 5 && experience < 10){
             System.out.println("your experience gives you $100 in annual pay. " +
-                    "Your year salary is: " + (yearSalary(monthSalary, monthsInYear) + experienceBonus));
+                    "Your year salary is: " + (yearSalary + experienceBonus));
         }
 
         else if (experience >= 10){
             System.out.println("your experience gives you $500 in annual pay. " +
-                    "Your year salary is: " + (yearSalary(monthSalary, monthsInYear) + experienceBonus * 5));
+                    "Your year salary is: " + (yearSalary + experienceBonus * 5));
         }
 
         else{
-            System.out.println( "Your year salary is: " + yearSalary(monthSalary, monthsInYear));
+            System.out.println( "Your year salary is: " + yearSalary);
         }
     }
 
-    private static int yearSalary (int monthSalary, int monthsInYear){
-        return monthSalary * monthsInYear;
-    }
 }

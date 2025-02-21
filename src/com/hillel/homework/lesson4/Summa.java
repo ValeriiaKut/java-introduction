@@ -37,6 +37,7 @@ public class Summa {
     }
 
     public static double calculateTwoInts(int i, int i1) {
+
         return i + i1;
     }
 
@@ -45,6 +46,7 @@ public class Summa {
     }
 
     public static double calculateTwoInts(double d, double d1) {
+
         return d + d1;
     }
 }
