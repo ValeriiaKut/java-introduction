@@ -2,20 +2,20 @@ package com.hillel.homework.lesson6;
 
 public class Exercise1 {
     public static void main(String[] args) {
-        double random1 =  random();
-        double random2 = random();
-        double random3 = random();
+        int random1 = (int) random();
+        int random2 = (int) random();
+        int random3 = (int) random();
 
-        System.out.println((int)random1);
-        System.out.println((int)random2);
-        System.out.println((int)random3);
+        System.out.println(random1);
+        System.out.println(random2);
+        System.out.println(random3);
 
-        if ( random1 < random2 && random1 < random3 ) {
-            System.out.println("min = " + (int)random1);
-        } else if ( random2 < random1 && random2 < random3 ) {
-            System.out.println("min = " + (int)random2);
+        int min = Math.min(random1, Math.min(random2, random3));
+
+        if (random1 == random2 && random2 == random3) {
+            System.out.println("All numbers are equal.");
         } else {
-            System.out.println("min = " + (int)random3);
+            System.out.println("Min = " + min);
         }
     }
     public static double random() {
