@@ -10,7 +10,7 @@ public class ChooseAnOption {
 
         String option = "";
 
-        while (!option.equals("stop")){
+        while (!option.equals("stop")) {
 
             System.out.println("Choose an option (+,-,/,*): ");
             option = br.readLine();
@@ -20,22 +20,22 @@ public class ChooseAnOption {
             System.out.println("Enter a number 2: ");
             int num2 = Integer.parseInt(br.readLine());
 
-            switch (option){
+            switch (option) {
                 case "+":
                     System.out.println("The answer is: " + (num1 + num2));
                     break;
-                    case "-":
-                        System.out.println("The answer is: " + (num1 - num2));
-                        break;
-                        case "/":
-                            System.out.println("The answer is: " + (num1 / num2));
-                            break;
-                            case "*":
-                                System.out.println("The answer is: " + (num1 * num2));
-                                break;
-                                default:
-                                    System.out.println("Invalid option");
-                                    break;
+                case "-":
+                    System.out.println("The answer is: " + (num1 - num2));
+                    break;
+                case "/":
+                    System.out.println("The answer is: " + (num1 / num2));
+                    break;
+                case "*":
+                    System.out.println("The answer is: " + (num1 * num2));
+                    break;
+                default:
+                    System.out.println("Invalid option");
+                    break;
 
             }
 

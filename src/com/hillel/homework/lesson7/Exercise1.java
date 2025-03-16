@@ -10,31 +10,29 @@ public class Exercise1 {
 
     public static void main(String[] args) throws IOException {
 
-        int random = (int) (Math.random() * 11) ;
+        int random = (int) (Math.random() * 11);
 
-        int number = -1;
+        int number;
 
         System.out.println("Enter a number between 0 and 10: ");
 
 
-        while (number !=random) {
-
+        do {
             number = Integer.parseInt(READER.readLine());
 
-            if (number == random){
+            if (number == random) {
                 System.out.println("You win");
                 break;
-            }
-            else if (number < random) {
+            } else if (number < random) {
                 System.out.println("random number is bigger than " + number);
-            }
-            else {
+            } else {
                 System.out.println("random number is smaller than " + number);
             }
             System.out.println("Enter a number between 0 and 10: ");
-            }
-        }
+        } while (random != number);
+
     }
+}
 
 
 
